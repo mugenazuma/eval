@@ -74,6 +74,7 @@ FROM products
 INNER JOIN categories ON pro_id = cat_id
 ORDER BY cat_name ASC
 
+
 -- Q10. Afficher l'organigramme hiérarchique (nom et prénom et poste des employés) du magasin de Compiègne, classer par ordre alphabétique. 
 -- Afficher le nom et prénom des employés, éventuellement le poste (si vous y parvenez).
 
@@ -132,7 +133,5 @@ FROM orders_details
 
 -- Q20. Lister le total de chaque commande par total décroissant (Afficher numéro de commande, date, total et nom du client)
 
-SELECT sum(ode_unit_price * ode_quantity)
-FROM customers
 
 
